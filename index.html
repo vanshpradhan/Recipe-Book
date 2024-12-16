@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body background="e8d8ee9edece42916aa5851d7fd7bebd.jpg">
+    <div class="container">
+        <h1>Recipe Book</h1>
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="recipe-category" placeholder="Category (e.g., Breakfast)" required>
+            <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+            <textarea id="recipe-instructions" placeholder="Preparation Steps" required></textarea>
+            <input type="file" id="recipe-image" accept="image/*" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+        <input type="text" id="search" placeholder="Search Recipes" onkeyup="searchRecipes()">
+        <div id="recipe-list"></div>
+        <div id="feedback" class="feedback"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
